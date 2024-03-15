@@ -1,0 +1,566 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    line-height: 1.65;
+}
+
+.navbar {
+    background-color: #041356; /* Adjust the background color as needed */
+    border-bottom: 1px solid #ddd; /* Adjust the border color as needed */
+ color: #ffff;
+}
+
+.navbar-brand img {
+    max-height: 60px; /* Adjust the max height of the logo image */
+    margin-right: 40px; /* Adjust the margin as needed */
+}
+
+
+
+.navbar-toggler {
+    margin-right: 20px;
+    border: 1px solid black; /* Remove the border */
+}
+
+
+
+.navbar-nav .nav-item {
+    margin-left: 20px; /* Adjust the margin between nav items */
+    color: #ffff;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(249, 247, 247); /* Adjust the text color of the nav links */
+    transition: color 0.3s ease; /* Add a smooth transition for color change */
+}
+
+
+/* Hover styling for specific nav links */
+.navbar-nav .nav-link:hover {
+    color: #a5a5a7; /* Hover color for specific nav links */
+}
+
+
+
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 4px; /* Remove the right margin for the last nav item */
+}
+
+.navbar-toggler,
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-brand img {
+        margin-right: 10px; /* Reduce the margin for the logo image */
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 10px; /* Reduce the margin between nav items */
+    }
+
+    span {
+        margin-left: 0; /* Reset margin for spans */
+    }
+}
+
+.chat-box {
+    position: fixed;
+    top: 280px;
+    color:white;
+    left: 20px; /* Adjust the left distance from the edge of the viewport */
+    z-index: 9999; /* Ensure it appears above other content */
+    background-color: #108c39; /* Optional: Adjust background color */
+    padding: 10px 20px; /* Optional: Adjust padding */
+    border: 1px solid #ccc; /* Optional: Add border */
+    border-radius: 18px; /* Optional: Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+#sideoffer {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -350px;
+}
+
+#sideoffer img {
+    position: absolute;
+    cursor: pointer;
+    left: -65px;
+    width: 65px;
+}
+
+
+
+
+#Digital-cut {
+    background-image: linear-gradient(to bottom right, #003474 50%, #5f8a00);
+    display: flex;
+    justify-content: space-between;
+    height: 120vh;
+
+  }
+  
+
+  .Dgital-mark,
+  .Digital-round {
+    margin: 130px 20px;
+    flex: 1;
+  }
+  
+  .Digital-round {
+ 
+    max-width: 400px;
+    padding: 20px;
+    background: #000000ab;
+    margin-right: 120px;
+    height: 700px;
+  
+  }
+  .Digital {
+    margin: 70px;
+  }
+  .Digital h1{
+  margin: 40px 20px;
+    color: #ffff;
+    font-size: 3.4rem;
+    font-weight: 800;
+  }
+
+  .Digital h2{
+    margin: 3.2rem;
+    color: #ffeb00;
+    font-size: 42px;
+    margin: 40px 20px;
+    font-weight: 800;
+  }
+  
+  .form {
+    margin-top: 20px;
+ 
+  }
+  
+  .containerform {
+    width: 100%;
+  }
+  
+  .form-row {
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  .form-row h2{
+    color: white;
+  }
+  
+  .input-data {
+    flex: 1;
+    margin-bottom: 15px;
+  }
+  
+  .input-data label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-data input[type="text"],
+  .input-data select,
+  .input-data textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-data textarea {
+    height: 150px;
+  }
+  
+  .submit-btn {
+    text-align: left;
+  }
+  
+  .submit-btn input[type="submit"] {
+    background-color: #06115e;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 19px;
+  }
+  
+  .submit-btn input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #Digital-cut {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+   
+    }
+  
+    .Digital-round {
+        margin-top: 20px;
+      margin-right: 0;
+      margin-bottom: 20px;
+        max-width: 100%; /* Adjust to full width on smaller screens */
+        margin-right: 0; /* Remove right margin on smaller screens */
+        height: auto; /* Allow the height to adjust based on content */
+    }
+    .Digital h1 {
+        font-size: 30px;
+        line-height: 45px;
+    
+    }
+  }
+
+  .container-main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Styles for text centering */
+.text-center {
+    text-align: center;
+}
+
+/* Styles for image */
+.container-main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for headings */
+.text-center h2 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+
+/* Styles for paragraphs */
+.text-center p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .container-main {
+        padding: 0 40px;
+    }
+}
+
+#cart {
+    margin-top: 30px;
+}
+
+.services-item {
+    padding: 50px 35px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+ margin-bottom: 30px;
+ background-color: rgb(171, 223, 240);
+}
+
+
+@media screen and (max-width: 600px) {
+    .services-item {
+        padding: 30px 20px 30px 20px;
+    }
+}
+
+#services-item {
+    background-color: white;
+}
+
+#service-point{
+    margin: 30px;
+    background-color: #ddd;
+} 
+
+.sec-title2 
+{
+   padding: 30px;
+}
+
+.services-content a{
+    text-decoration: none;
+    color: #102b3e;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Styles for counter section */
+.rs-counter {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Styles for counter title */
+.rs-counter h2 {
+    margin-bottom: 50px;
+}
+
+/* Styles for counter items */
+.counter-list {
+    margin-bottom: 30px;
+}
+
+/* Styles for counter number */
+.count-number span {
+    color: #03228f;
+    font-size: 45px;
+    font-weight: 700;
+    padding: 0;
+}
+
+/* Styles for counter title */
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #101010;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .rs-counter h2 {
+        margin-bottom: 30px;
+    }
+}
+
+.bg7 {
+    background: url(/image/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.epx-title  {
+    margin: 0px 80px;
+    font-size: 33px;
+    line-height: 43px;
+    color: #fff;
+}
+
+.readon.learn-more{
+background-image: linear-gradient(250deg, #4e95ed 19%, #03228f 100%);
+    border-radius: 30px 30px 30px 30px;
+    padding: 14px 35px 14px 35px;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .pb-70 {
+        padding-bottom: 70px;
+    }
+
+    .pt-70 {
+        padding-top: 70px;
+    }
+
+    .epx-title {
+        margin: 0px 40px; /* Adjust as needed */
+        font-size: 28px; /* Adjust as needed */
+        line-height: 38px; /* Adjust as needed */
+    }
+
+    .readon.learn-more {
+        background-image: linear-gradient(250deg, #4e95ed 19%, #03228f 100%);
+        border-radius: 30px; /* Adjust as needed */
+        padding: 12px 30px; /* Adjust as needed */
+        text-decoration: none;
+        color: white;
+    }
+
+    .md-center {
+        margin-top: 20px;
+        text-align: center !important;
+    }
+}
+
+.servicesitem {
+    padding: 50px 35px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+ margin-bottom: 30px;
+background-color: #101010;
+color: white;
+}
+
+.main-img{
+height: 70px;
+width: 70px;
+margin: 20px;
+}
+
+.image-part .hover-img {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .3s ease;
+}
+
+
+.serial-number {
+    position: absolute;
+    right: 15px;
+    top: -113px;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 119px;
+    margin-bottom: 10px;
+}
+
+.testi-title {
+    margin: 40px;
+    font-size: 34px;
+    font-weight: 700;
+}
+.desc {
+    padding: 0px 50px;
+}
+
+.rs-rain-animate{
+    margin: 0 50px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items vertically */
+    margin-bottom: 30px;
+}
+
+.container-flex img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+.rs-footer {
+    background: url(/image/footer-bg.png);
+    background-color: #f5f6f9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-top{
+    padding: 20px 40px;
+}
+.footer-logo {
+    margin: 30px;
+}
+
+.site-map {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-map li {
+    margin-bottom: 10px; /* Adjust spacing between list items */
+}
+
+.site-map li a {
+    text-decoration: none;
+    color: #333; /* Adjust link color */
+    font-size: 16px; /* Adjust font size */
+    display: block;
+    padding: 5px 0; /* Adjust padding as needed */
+}
+
+.site-map li a:hover {
+    color: #4e95ed; /* Adjust hover color */
+}
+
+.address-widget {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.address-widget li {
+    margin-bottom: 15px; /* Adjust spacing between list items */
+    display: flex;
+    align-items: center;
+}
+
+.address-widget li i {
+    font-size: 20px; /* Adjust icon size */
+    margin-right: 10px; /* Adjust spacing between icon and text */
+}
+
+.address-widget li .desc {
+    font-size: 14px; /* Adjust text size */
+}
+
+.address-widget li a {
+    text-decoration: none;
+    color: #333; /* Adjust link color */
+}
+
+/* Optional: Add hover effect for links */
+.address-widget li a:hover {
+    color: #4e95ed; /* Adjust hover color */
+}
+
+.widget-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea.form-control {
+    height: 120px; /* Adjust textarea height */
+}
+
+.btn {
+    background-color: #003474;
+    color: #fff;
+    padding: 0px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #001f4d; /* Adjust hover color */
+}
